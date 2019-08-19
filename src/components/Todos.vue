@@ -3,7 +3,10 @@
     <h1>Todos</h1>
     <div class="todos">
       <div class="todos">
-        <div v-for="todo in allTodos" :key="todo.id" class="todo">{{ todo.title }}</div>
+        <div v-for="todo in allTodos" :key="todo.id" class="todo">{{ todo.title }}
+            <i class="small material-icons">delete</i>
+
+        </div>
       </div>
     </div>
   </div>
@@ -46,5 +49,11 @@ export default {
   text-align: center;
   position: relative;
   cursor: pointer;
+  width: 324px;
+}
+i {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
 }
 </style>
