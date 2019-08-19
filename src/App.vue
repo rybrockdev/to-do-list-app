@@ -24,7 +24,7 @@ body {
 }
 .container {
   max-width: 1100px;
-  margin: 0;
+  margin: auto;
   overflow: auto;
   padding: 0 2rem;
 }
