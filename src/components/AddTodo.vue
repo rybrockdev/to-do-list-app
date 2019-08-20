@@ -3,8 +3,8 @@
     <h3>Add Todo</h3>
     <div class="add">
       <form @submit="onSubmit">
-        <input type="text" v-model="title" placeholder="Add Todo........" />
-        <input type="submit" value="submit" />
+        <input type="text" v-model="title" class="input" placeholder="Add Todo........" />
+        <input type="submit" value="submit" class="submit" />
       </form>
     </div>
   </div>
@@ -35,17 +35,16 @@ export default {
 form {
   display: flex;
 }
-input[type="text"] {
-  flex: 10;
-  padding: 10px;
+input {
   border: 1px solid #41b883;
-  outline: 0;
+  padding: 5px;
 }
-input[type="submit"] {
-  flex: 3;
+.submit {
   background: #41b883;
   color: #fff;
   border: 1px solid #41b883;
   cursor: pointer;
+  width: 150px;
+  height: 46px;
 }
 </style>

@@ -4,7 +4,7 @@
     <div class="todos">
       <div class="todos">
         <div v-for="todo in allTodos" :key="todo.id" class="todo">{{ todo.title }}
-            <i class="small material-icons">delete</i>
+            <i @click="deleteTodo(todo.id)" class="small material-icons">delete</i>
 
         </div>
       </div>
@@ -19,7 +19,7 @@ export default {
   name: "Todos",
 
   methods: {
-    ...mapActions(['fetchTodos'])
+    ...mapActions(["fetchTodos", "deleteTodo"])
   },
 
   computed: mapGetters(["allTodos"]),
