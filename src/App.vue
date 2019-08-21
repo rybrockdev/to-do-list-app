@@ -32,8 +32,9 @@ body {
 }
 .container {
   max-width: 1100px;
+  max-height: 1200px;
+  height: 100%;
   margin: auto;
-  overflow: auto;
   padding: 0 2rem;
 }
 </style>

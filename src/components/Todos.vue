@@ -4,7 +4,7 @@
     <div class="todos">
       <div class="todos">
         <div v-for="todo in allTodos" :key="todo.id" class="todo">{{ todo.title }}
-            <i @click="deleteTodo(todo.id)" class="small material-icons">delete</i>
+            <i @click="deleteTodo(todo.id)" class="fas fa-trash"></i>
 
         </div>
       </div>
@@ -36,6 +36,9 @@ export default {
 
 
 <style scoped>
+body {
+  width: 100%
+}
 .todos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,7 +47,7 @@ export default {
 .todo {
   border: 1px solid #ccc;
   background: #41b883;
-  padding: 1rem;
+  padding: 22px;
   border-radius: 5px;
   text-align: center;
   position: relative;
